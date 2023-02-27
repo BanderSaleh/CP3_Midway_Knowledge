@@ -31,7 +31,7 @@ namespace CP3Me
         // Static Method
         static void Preload()
         {
-            Data.products.Add(new Product("Snickers Bar", 2.50, 100));
+            Data.products.Add(new HotDrink("Hot Coco", 2.50m, 100, Drink.Size.Venti, 110.21));
         }
 
 

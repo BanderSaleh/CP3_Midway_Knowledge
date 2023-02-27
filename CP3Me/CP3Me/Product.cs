@@ -9,16 +9,16 @@ namespace CP3Me
     // Defined this Parent Abstract Class to store our apps base Product data.
     //An Abstract class is used to create a general class that others can inherit from,
     //but you can't make a current instance of directly.
-    public class Product
+    public abstract class Product
     {
         // Fields
         string _name;
-        double _price;
+        decimal _price;
         double _points;
 
 
         // Constructors
-        public Product(string name, double price, double points)
+        public Product(string name, decimal price, double points)
         {
             _name = name;
             _price = price;
@@ -31,10 +31,7 @@ namespace CP3Me
             get => _name;
         }
 
-        internal static void Add(Product products)
-        {
-            throw new NotImplementedException();
-        }
+     
 
         // override
         public override string ToString()

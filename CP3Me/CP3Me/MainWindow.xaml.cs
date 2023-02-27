@@ -23,16 +23,16 @@ namespace CP3Me
     // this C# XAML project is incorporating:
 
     // WPF Forms
-    // Inheritance (MISSING)
-    // Method Hiding (MISSING)
-    // Method Has-A (MISSING)
-    // Method Contains-A (MISSING)
+    // Inheritance
+    // Method Hiding
+    // Aggregation - Method Has-A
+    // Method Contains-A
     // Static and Extension Methods
-    // Abstract (MISSING)
+    // Abstract
     // Interface (MISSING)
     // IEnumerable (MISSING)
     // IComparble (MISSING)
-    // Generic Classes/Methods (MISSING)
+    // Generic Classes/Methods
     // Class Libraries
     // Exceptions (MISSING)
     // Deconstructors (MISSING)
@@ -46,7 +46,7 @@ namespace CP3Me
         {
             InitializeComponent(); // Initial Code running this window
 
-            lbProducts.ItemsSource = Data.products;
+            lbProducts.ItemsSource = Data.products; // Assigns Data to our ListBox
 
             // Class Library
             MessageBox.Show(MyLibrary.MyMath.Add(1, 2).ToString()); //Runs the Static Method via Class Library
