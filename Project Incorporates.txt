@@ -1,0 +1,9 @@
+Programming Language: C# (Visual Studio)
+
+Templates:
+-WPF Application (C#)
+-Class Library (C#)
+
+Incorporates:
+-Class Libraries (purpose: makes our code portable)
+-
