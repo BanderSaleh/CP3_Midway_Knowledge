@@ -24,9 +24,9 @@ namespace CP3Me
         {
             InitializeComponent(); // Initial Code for our project
             // Incorporating:
-            // -Class Libraries
-            // -Exceptions
-            // -Deconstructors
+            // -Class Libraries (missing)
+            // -Exceptions (missing)
+            // -Deconstructors (missing)
 
 
         }
