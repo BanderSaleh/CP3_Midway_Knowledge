@@ -18,16 +18,67 @@ namespace CP3Me
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
+
+    // this C# XAML project is incorporating:
+
+    // WPF Forms
+    // Inheritance (MISSING)
+    // Method Hiding (MISSING)
+    // Method Has-A (MISSING)
+    // Method Contains-A (MISSING)
+    // Static and Extension Methods
+    // Abstract (MISSING)
+    // Interface (MISSING)
+    // IEnumerable (MISSING)
+    // IComparble (MISSING)
+    // Generic Classes/Methods (MISSING)
+    // Class Libraries
+    // Exceptions (MISSING)
+    // Deconstructors (MISSING)
+
+    //Our Default Main Window .cs code
     public partial class MainWindow : Window
     {
+
+
         public MainWindow()
         {
-            InitializeComponent(); // Initial Code for our project
-            // Incorporating:
-            // -Class Libraries 
-            // -Exceptions (missing)
-            // -Deconstructors (missing)
+            InitializeComponent(); // Initial Code running this window
 
+            lbProducts.ItemsSource = Data.products;
+
+            // Class Library
+            MessageBox.Show(MyLibrary.MyMath.Add(1, 2).ToString()); //Runs the Static Method via Class Library
+            
+
+        }
+
+
+
+        // WPF Forms click events created
+        private void btnCreateProduct_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void txtName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void txtPrice_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void txtPoints_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void lbProducts_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
 
         }
     }

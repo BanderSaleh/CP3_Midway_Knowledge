@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CP3Me"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow">
+    <Grid Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" Height="450" Width="800">
+        <ListBox x:Name="lbProducts" Margin="250,104,330,46" SelectionChanged="lbProducts_SelectionChanged"/>
+        <Button x:Name="btnBuy" Content="Buy" HorizontalAlignment="Left" Margin="480,214,0,0" VerticalAlignment="Top" Height="30" Width="70"/>
+        <ComboBox x:Name="cbUsers" HorizontalAlignment="Left" Margin="560,42,0,0" VerticalAlignment="Top" Width="140"/>
+        <ListBox x:Name="lbProducts_Copy" Margin="560,144,20,46"/>
+        <Label Content="User Points:  0" HorizontalAlignment="Left" Margin="560,409,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnPoints" Content="Use Points" HorizontalAlignment="Left" Margin="480,264,0,0" VerticalAlignment="Top" Height="30" Width="70" IsDefault="True"/>
+
+        <Canvas Margin="20,24,560,10" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
+            <Label Content="New Product" FontSize="20" Canvas.Left="21" Canvas.Top="23" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+            <Label Content="Name" Canvas.Left="19" Canvas.Top="94"/>
+            <TextBox x:Name="txtName" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Canvas.Left="20" Canvas.Top="122" TextChanged="txtName_TextChanged"/>
+            <Label Content="Price" Canvas.Left="20" Canvas.Top="174" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtPrice" TextWrapping="Wrap" Width="120" Canvas.Left="20" Canvas.Top="200" HorizontalAlignment="Left" VerticalAlignment="Center" TextChanged="txtPrice_TextChanged"/>
+            <Label Content="Points" Canvas.Left="20" Canvas.Top="254" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtPoints" TextWrapping="Wrap" Width="120" Canvas.Left="20" Canvas.Top="280" HorizontalAlignment="Center" VerticalAlignment="Top" TextChanged="txtPoints_TextChanged"/>
+            <Button x:Name="btnCreateProduct" Content="Create Product" Canvas.Left="40" Canvas.Top="340" Height="40" Width="140" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnCreateProduct_Click"/>
+
+        </Canvas>
+        <Label Content="Products" HorizontalAlignment="Left" Margin="293,52,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Current User:" HorizontalAlignment="Left" Margin="561,14,0,0" VerticalAlignment="Top" RenderTransformOrigin="0,0.579"/>
+        <Label Content="Purchases" HorizontalAlignment="Left" Margin="555,94,0,0" VerticalAlignment="Top" FontSize="20"/>
+
+
 
     </Grid>
 </Window>
